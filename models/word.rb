@@ -1,10 +1,10 @@
 class Word
 
-  attr_accessor :content, :part_ofspeech, :symbol
+  attr_accessor :content, :part_of_speech, :symbol
 
   def initialize(input_options)
     @content = input_options["content"]
-    @part_ofspeech = input_options["part_ofspeech"]
+    @part_ofspeech = input_options["part_of_speech"]
     @symbol = input_options["symbol"]
   end
 

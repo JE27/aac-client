@@ -3,7 +3,7 @@ module WordsViews
   def words_index_view(words)
     puts "-" * 70
       words.each do |word|
-        words_index_view(word)
+        words_show_view(word)
         puts "-" * 70
       end
     end  
@@ -14,8 +14,9 @@ module WordsViews
     puts word.content.upcase
     puts "~" * 70
     puts word.part_of_speech
-    puts 
+    puts "-" * 70
     puts word.symbol
+    puts "-" * 70
   end
 
   def words_id_form
@@ -33,7 +34,7 @@ module WordsViews
     print "Image URL: "
     client_params[:symbol] = gets.chomp
     client_params
-    
+  
   end
 
   def words_update_form(word)
